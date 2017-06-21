@@ -24,16 +24,14 @@ public class MainClass {
         if (readCSV.isRead()) {
             CSVsearch.search(find);
             if (CSVsearch.isFound()) {
-                if (!CSVsearch.getFoundColumns().isEmpty()) {
-                    WriteInFile.WriteTXT(CSVsearch, filename);
-                } else {
-                    System.out.println("Nothing was found");
-                }
+                WriteInFile.WriteTXT(CSVsearch, filename);
+            } else {
+                System.out.println("Nothing was found");
             }
 
 
         } else {
-            System.out.println("Could'n read CSV file");
+            System.out.println("Couldn't read CSV file");
         }
         System.out.println("Finished");
 
