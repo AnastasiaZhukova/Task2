@@ -16,7 +16,7 @@ public class WriteInFile {
 
         int stringsSize=searchInfo.getNumberOfLines();
 
-        String[] foundColumns=searchInfo.getColumnNumbers().split(" ");
+        String[] foundColumns=searchInfo.getFoundColumns().split(" ");
         int foundColumnsSize=foundColumns.length;
         int currentColumn;
         for (int i=0; i<foundColumnsSize; i++)

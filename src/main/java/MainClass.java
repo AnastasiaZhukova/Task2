@@ -1,4 +1,3 @@
-import com.opencsv.CSVReader;
 import CSVsearch.ReadCSV;
 import CSVsearch.Search;
 import CSVsearch.WriteInFile;
@@ -25,7 +24,7 @@ public class MainClass {
         if (readCSV.isRead()) {
             CSVsearch.search(find);
             if (CSVsearch.isFound()) {
-                if (!CSVsearch.getColumnNumbers().isEmpty()) {
+                if (!CSVsearch.getFoundColumns().isEmpty()) {
                     WriteInFile.WriteTXT(CSVsearch, filename);
                 } else {
                     System.out.println("Nothing was found");

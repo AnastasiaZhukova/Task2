@@ -8,7 +8,7 @@ public class Search {
     public Vector<String[]> stringsArray;
     private int numberOfLines;
     private int numberOfColumns;
-    private String columnNumbers;
+    private String foundColumns;
     private boolean isfound=false;
 
 
@@ -29,7 +29,7 @@ public class Search {
                 }
             }
         }
-        this.columnNumbers = columnNumbers.toString();
+        this.foundColumns = columnNumbers.toString();
     }
 
 
@@ -52,9 +52,9 @@ public class Search {
         return numberOfLines;
     }
 
-    public String getColumnNumbers()
+    public String getFoundColumns()
     {
-        return columnNumbers;
+        return foundColumns;
     }
 
     public void setNumberOfLines(int numberOfLines) {
