@@ -6,7 +6,7 @@ import CSVsearch.WriteInFile;
 public class MainClass {
     public static void main(String[] args) {
         if (args.length != 3) {
-            System.out.println("Wrong number of arguments. Notice: -CSVfile -SearchString -FinalFilename");
+            System.out.println("Wrong number of arguments. Notice: CSVfile SearchString FinalFilename");
             System.exit(0);
         }
         String CSV = args[0];

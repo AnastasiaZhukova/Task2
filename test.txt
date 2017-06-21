@@ -1,6 +1,1 @@
-TWO
-cat
-cat
-cat
-cat
-two
+TWOcatcatcatcattwo
